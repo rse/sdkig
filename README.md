@@ -31,6 +31,14 @@ Installation
 $ npm install -g sdkig
 ```
 
+Requirements
+------------
+
+Unfortunately, this utility needs a licensed [PrinceXML](https://www.princexml.com/) **prince**(1)
+and the free [Poppler](https://poppler.freedesktop.org/) **pdftocairo**(1) utilities in the shell PATH.
+PrinceXML is needed for rendering the internally generated HTML to the intermediate PDF format.
+Poppler is needed for rendering the intermediate PDF to the PNG output format.
+
 Usage
 -----
 
