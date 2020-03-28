@@ -115,8 +115,8 @@ const execa       = require("execa")
         throw new Error("output has to be defined")
 
     /*  generate HTML  */
-    let htmlFile = tmp.fileSync()
-    let html =
+    const htmlFile = tmp.fileSync()
+    const html =
         `<!DOCTYPE html>
         <html>
             <head>
@@ -180,7 +180,7 @@ const execa       = require("execa")
     await fs.promises.writeFile(htmlFile.name, html, { encoding: "utf8" })
 
     /*  render HTML into PDF  */
-    let pdfFile = tmp.fileSync()
+    const pdfFile = tmp.fileSync()
     await Prince()
         .inputs(htmlFile.name)
         .output(pdfFile.name)
@@ -188,7 +188,7 @@ const execa       = require("execa")
         .catch((err) => { throw err })
 
     /*  render PDF into PNG  */
-    let pngFile = tmp.fileSync()
+    const pngFile = tmp.fileSync()
     await execa("pdftocairo", [
         "-png",
         "-singlefile",
