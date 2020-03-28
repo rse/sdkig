@@ -151,11 +151,11 @@ const execa       = require("execa")
                     .icon {
                         position: absolute;
                         left: 0;
-                        top: 15px;
+                        top: 25px;
                         width: 100%;
                         height: 100%;
                         text-align: center;
-                        font-size: 220px;
+                        font-size: 200px;
                         color: #${argv.iconColor};
                     }
                     .text {
