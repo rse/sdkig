@@ -36,8 +36,8 @@ Usage
 ```sh
 $ sdkig \
     -b bb0000 \
-    -i radiation-alt -I ffffff \
-    -t "Attention"   -T ffc0c0 \
+    -i radiation-alt -I ffc0c0 \
+    -t "Attention"   -T ffffff \
     -o sample.png
 ```
 
