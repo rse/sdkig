@@ -107,12 +107,12 @@ const execa       = require("execa")
     }
 
     /*  sanity check usage  */
-    if (argv.icon === "")
-        throw new Error("icon has to be defined")
-    if (argv.text === "")
-        throw new Error("text has to be defined")
-    if (argv.output === "")
-        throw new Error("output has to be defined")
+    if (argv.iconName === "")
+        throw new Error("option -i|--icon-name has to be given")
+    if (argv.titleText === "")
+        throw new Error("option -t|--title-text has to be given")
+    if (argv.outputFile === "")
+        throw new Error("option -o|--output-file has to be given")
 
     /*  generate HTML  */
     const htmlFile = tmp.fileSync()
@@ -211,7 +211,7 @@ const execa       = require("execa")
     process.exit(0)
 })().catch((err) => {
     /*  fatal error  */
-    process.stderr.write(`sdkig: ${chalk.red("ERROR:")} ${err.stack}\n`)
+    process.stderr.write(`sdkig: ${chalk.red("ERROR:")} ${err.message}\n`)
     process.exit(1)
 })
 
