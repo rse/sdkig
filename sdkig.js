@@ -165,6 +165,7 @@ const execa       = require("execa")
                         width: 100%;
                         text-align: center;
                         font-family: "TypoPRO Source Sans Pro";
+                        font-weight: 600;
                         font-size: 50px;
                         color: #${argv.titleColor};
                     }
