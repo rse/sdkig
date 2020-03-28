@@ -13,12 +13,15 @@ SDKIG
 Abstract
 --------
 
-SDKIG is a small utility for generating key images for Elgato Stream
-Deck devices. The key images have to be of size 288x288 pixels (although
+SDKIG is a small utility for generating key images for [Elgato Stream
+Deck](https://www.elgato.com/en/gaming/stream-deck) devices. The key images have to be of size 288x288 pixels (although
 the device seems to downscale them to 72x72 pixels) and are generated
-by the combination of a FontAwesome icon and a TypoPRO Source Sans Pro
-title. The colors of the background, the icon and the title can be
-choosen through RGB values.
+by the combination of a [FontAwesome](https://fontawesome.com/)
+[icon](https://fontawesome.com/icons?d=gallery&m=free)
+and a [TypoPRO](http://typopro.org/)
+[Source Sans Pro](http://typopro.org/specimen/specimen.html#TypoPRO_0_Source_0_Sans_0_Pro-normal-normal-normal-normal)
+based title. The colors of the background, the icon and the title can be
+choosen through arbitrary RGB values.
 
 Installation
 ------------
