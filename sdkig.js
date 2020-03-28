@@ -124,8 +124,8 @@ const execa       = require("execa")
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <style type="text/css">
-                    @import "${process.cwd()}/node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-                    @import "${process.cwd()}/node_modules/typopro-web/web/TypoPRO-SourceSansPro/TypoPRO-SourceSansPro.css";
+                    @import "${__dirname}/node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+                    @import "${__dirname}/node_modules/typopro-web/web/TypoPRO-SourceSansPro/TypoPRO-SourceSansPro.css";
                     @page {
                         size: 288px 288px;
                         margin: 0;
