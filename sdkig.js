@@ -55,6 +55,8 @@ const execa       = require("execa")
             "[-b|--background-color <rgb-color>] " +
             "[-i|--icon-name <name>] " +
             "[-I|--icon-color <rgb-color>] " +
+            "[-s|--subicon-name <name>] " +
+            "[-S|--subicon-color <rgb-color>] " +
             "[-t|--title-text <text>] " +
             "[-T|--title-color <rgb-color>] " +
             "[-o|--output-file <png-file>]"
@@ -78,6 +80,14 @@ const execa       = require("execa")
         .option("I", {
             describe: "icon color",
             alias:    "icon-color", type: "string", nargs: 1, default: "#ffffff"
+        })
+        .option("s", {
+            describe: "subicon name",
+            alias:    "subicon-name", type: "string", nargs: 1, default: ""
+        })
+        .option("S", {
+            describe: "subicon color",
+            alias:    "subicon-color", type: "string", nargs: 1, default: "#ffffff"
         })
         .option("t", {
             describe: "title text",
@@ -144,8 +154,8 @@ const execa       = require("execa")
                         left: 0;
                         top: 0;
                         border-radius: 40px;
-                        width: 100%;
-                        height: 100%;
+                        width: 288px;
+                        height: 288px;
                         background-color: #${argv.backgroundColor};
                     }
                     .icon {
@@ -156,6 +166,20 @@ const execa       = require("execa")
                         height: 100%;
                         text-align: center;
                         font-size: 200px;
+                        color: #${argv.iconColor};
+                    }
+                    .icon-sub {
+                        position: absolute;
+                        left: 25px;
+                        top: 25px;
+                        font-size: 110px;
+                        color: #${argv.subiconColor};
+                    }
+                    .icon-sup {
+                        position: absolute;
+                        right: 25px;
+                        bottom: 40px;
+                        font-size: 170px;
                         color: #${argv.iconColor};
                     }
                     .text {
@@ -172,9 +196,12 @@ const execa       = require("execa")
                 </style>
             </head>
             <body>
-                <div class="canvas">
-                    <i class="icon fa fa-${argv.iconName}"></i>
-                    <div class="text">${argv.titleText}</div>
+                <div class="canvas">` +
+                    (argv.subiconName !== "" ?
+                    `<div class="icon-sub"><i class="fa fa-${argv.subiconName}"></i></div>
+                     <div class="icon-sup"><i class="fa fa-${argv.iconName}"></i></div>` :
+                    `<div class="icon"><i class="fa fa-${argv.iconName}"></i></div>`) +
+                    `<div class="text">${argv.titleText}</div>
                 </div>
             </body>
         </html>`
