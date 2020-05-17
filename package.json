@@ -2,7 +2,7 @@
     "name":                       "sdkig",
     "homepage":                   "http://github.com/rse/sdkig",
     "description":                "Stream-Deck Key-Image Generator",
-    "version":                    "0.9.5",
+    "version":                    "0.9.6",
     "license":                    "MIT",
     "author": {
         "name":                   "Dr. Ralf S. Engelschall",
