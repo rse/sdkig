@@ -24,7 +24,7 @@
     },
     "devDependencies": {
         "babel-eslint":                  "10.1.0",
-        "eslint":                        "7.4.0",
+        "eslint":                        "7.9.0",
         "eslint-config-standard":        "14.1.1",
         "eslint-plugin-standard":        "4.0.1",
         "eslint-plugin-promise":         "4.2.1",
@@ -32,12 +32,12 @@
         "eslint-plugin-node":            "11.1.0"
     },
     "dependencies" : {
-        "yargs":                         "15.4.0",
+        "yargs":                         "16.0.3",
         "chalk":                         "4.1.0",
-        "prince":                        "1.8.0",
-        "execa":                         "4.0.2",
+        "prince":                        "1.8.3",
+        "execa":                         "4.0.3",
         "tmp":                           "0.2.1",
-        "@fortawesome/fontawesome-free": "5.13.1",
+        "@fortawesome/fontawesome-free": "5.14.0",
         "typopro-web":                   "4.2.3"
     },
     "engines": {
