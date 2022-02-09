@@ -31,13 +31,13 @@
         "eslint-plugin-node":            "11.1.0"
     },
     "dependencies" : {
-        "yargs":                         "16.2.0",
+        "yargs":                         "17.3.1",
         "chalk":                         "4.1.0",
-        "prince":                        "1.8.5",
+        "prince":                        "1.9.5",
         "execa":                         "5.0.0",
         "tmp":                           "0.2.1",
-        "@fortawesome/fontawesome-free": "5.15.1",
-        "typopro-web":                   "4.2.5"
+        "@fortawesome/fontawesome-free": "6.0.0",
+        "typopro-web":                   "4.2.6"
     },
     "engines": {
         "node":                          ">=10.0.0"

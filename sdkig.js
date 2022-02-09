@@ -61,6 +61,9 @@ const execa       = require("execa")
             "[-T|--title-color <rgb-color>] " +
             "[-o|--output-file <png-file>]"
         )
+        .version(false)
+        .strict(true)
+        .showHelpOnFail(true)
         .option("h", {
             describe: "show program help information",
             alias:    "help", type: "boolean", default: false
@@ -101,9 +104,6 @@ const execa       = require("execa")
             describe: "output file",
             alias:    "output-file", type: "string", nargs: 1, default: ""
         })
-        .version(false)
-        .strict(true)
-        .showHelpOnFail(true)
         .demand(0)
         .parse(process.argv.slice(2))
 
