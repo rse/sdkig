@@ -59,6 +59,7 @@ const execa       = require("execa")
             "[-S|--subicon-color <rgb-color>] " +
             "[-t|--title-text <text>] " +
             "[-T|--title-color <rgb-color>] " +
+            "[-f|--title-font <typopro-font-id>] " +
             "[-o|--output-file <png-file>]"
         )
         .version(false)
@@ -100,6 +101,10 @@ const execa       = require("execa")
             describe: "title color",
             alias:    "title-color", type: "string", nargs: 1, default: "#e0e0e0"
         })
+        .option("f", {
+            describe: "title font",
+            alias:    "title-font", type: "string", nargs: 1, default: "SourceSansPro"
+        })
         .option("o", {
             describe: "output file",
             alias:    "output-file", type: "string", nargs: 1, default: ""
@@ -111,7 +116,7 @@ const execa       = require("execa")
     if (argv.version) {
         process.stderr.write(`${my.name} ${my.version} <${my.homepage}>\n`)
         process.stderr.write(`${my.description}\n`)
-        process.stderr.write(`Copyright (c) 2020 ${my.author.name} <${my.author.url}>\n`)
+        process.stderr.write(`Copyright (c) 2020-2022 ${my.author.name} <${my.author.url}>\n`)
         process.stderr.write(`Licensed under ${my.license} <http://spdx.org/licenses/${my.license}.html>\n`)
         process.exit(0)
     }
@@ -135,7 +140,7 @@ const execa       = require("execa")
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <style type="text/css">
                     @import "${require.resolve("@fortawesome/fontawesome-free/css/all.min.css")}";
-                    @import "${require.resolve("typopro-web/web/TypoPRO-SourceSansPro/TypoPRO-SourceSansPro.css")}";
+                    @import "${require.resolve("typopro-web/web/TypoPRO-${argv.titleFont}/TypoPRO-${argv.titleFont}.css")}";
                     @page {
                         size: 288px 288px;
                         margin: 0;
