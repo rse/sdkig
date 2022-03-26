@@ -43,6 +43,30 @@ Usage
 -----
 
 ```sh
+Usage: sdkig [-h|--help] [-V|--version] [-b|--background-color <rgb-color>]
+[-i|--icon-name <name>] [-I|--icon-color <rgb-color>] [-s|--subicon-name <name>]
+[-S|--subicon-color <rgb-color>] [-t|--title-text <text>] [-T|--title-color
+<rgb-color>] [-f|--title-font <typopro-font-id>] [-o|--output-file <png-file>]
+
+Options:
+  -h, --help              Show help                   [boolean] [default: false]
+  -V, --version           show program version information
+                                                      [boolean] [default: false]
+  -b, --background-color  background color         [string] [default: "#000000"]
+  -i, --icon-name         icon name                       [string] [default: ""]
+  -I, --icon-color        icon color               [string] [default: "#ffffff"]
+  -s, --subicon-name      subicon name                    [string] [default: ""]
+  -S, --subicon-color     subicon color            [string] [default: "#ffffff"]
+  -t, --title-text        title text                      [string] [default: ""]
+  -T, --title-color       title color              [string] [default: "#e0e0e0"]
+  -f, --title-font        title font         [string] [default: "SourceSansPro"]
+  -o, --output-file       output file                     [string] [default: ""]
+```
+
+Example
+-------
+
+```sh
 $ sdkig \
     -b bb0000 \
     -i radiation-alt -I ffc0c0 \
