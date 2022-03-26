@@ -23,7 +23,6 @@
         "sdkig":                  "./sdkig.js"
     },
     "devDependencies": {
-        "babel-eslint":                  "10.1.0",
         "eslint":                        "8.12.0",
         "eslint-config-standard":        "17.0.0-1",
         "eslint-plugin-promise":         "6.0.0",
