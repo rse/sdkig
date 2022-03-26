@@ -59,7 +59,6 @@ Options:
   -S, --subicon-color     subicon color            [string] [default: "#ffffff"]
   -t, --title-text        title text                      [string] [default: ""]
   -T, --title-color       title color              [string] [default: "#e0e0e0"]
-  -f, --title-font        title font         [string] [default: "SourceSansPro"]
   -o, --output-file       output file                     [string] [default: ""]
 ```
 
@@ -67,14 +66,12 @@ Example
 -------
 
 ```sh
-$ sdkig \
-    -b bb0000 \
-    -i radiation-alt -I ffc0c0 \
-    -t "Attention"   -T ffffff \
-    -o sample.png
+$ sdkig -b bb0000 -i radiation-alt -I ffc0c0 -t "ATTENTION" -T ffffff -o sample1.png
+$ sdkig -b 336699 -s graduation-cap -S 6699cc -i face-grin -I d0e0ff -t "USERS" -T ffffff -o sample2.png
 ```
 
-![sample](sample.png)
+![sample1](sample1.png)
+![sample2](sample2.png)
 
 License
 -------

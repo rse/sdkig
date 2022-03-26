@@ -59,7 +59,6 @@ const execa       = require("execa")
             "[-S|--subicon-color <rgb-color>] " +
             "[-t|--title-text <text>] " +
             "[-T|--title-color <rgb-color>] " +
-            "[-f|--title-font <typopro-font-id>] " +
             "[-o|--output-file <png-file>]"
         )
         .version(false)
@@ -101,10 +100,6 @@ const execa       = require("execa")
             describe: "title color",
             alias:    "title-color", type: "string", nargs: 1, default: "#e0e0e0"
         })
-        .option("f", {
-            describe: "title font",
-            alias:    "title-font", type: "string", nargs: 1, default: "SourceSansPro"
-        })
         .option("o", {
             describe: "output file",
             alias:    "output-file", type: "string", nargs: 1, default: ""
@@ -140,7 +135,7 @@ const execa       = require("execa")
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <style type="text/css">
                     @import "${require.resolve("@fortawesome/fontawesome-free/css/all.min.css")}";
-                    @import "${require.resolve("typopro-web/web/TypoPRO-${argv.titleFont}/TypoPRO-${argv.titleFont}.css")}";
+                    @import "${require.resolve("typopro-web/web/TypoPRO-SourceSansPro/TypoPRO-SourceSansPro.css")}";
                     @page {
                         size: 288px 288px;
                         margin: 0;
@@ -165,37 +160,39 @@ const execa       = require("execa")
                     }
                     .icon {
                         position: absolute;
-                        left: 0;
-                        top: 25px;
-                        width: 100%;
-                        height: 100%;
+                        left: 10px;
+                        top: 10px;
+                        width: 268px;
+                        height: 210px;
                         text-align: center;
-                        font-size: 200px;
+                        font-size: 190px;
                         color: #${argv.iconColor};
                     }
                     .icon-sub {
                         position: absolute;
-                        left: 25px;
-                        top: 25px;
+                        left: 20px;
+                        top: 10px;
                         font-size: 110px;
                         color: #${argv.subiconColor};
                     }
                     .icon-sup {
                         position: absolute;
-                        right: 25px;
-                        bottom: 40px;
-                        font-size: 170px;
+                        right: 20px;
+                        bottom: 50px;
+                        font-size: 160px;
                         color: #${argv.iconColor};
                     }
                     .text {
                         position: absolute;
-                        left: 0;
-                        bottom: 0px;
-                        width: 100%;
+                        left: 10px;
+                        bottom: 10px;
+                        width: 268px;
+                        height: 55px;
                         text-align: center;
                         font-family: "TypoPRO Source Sans Pro";
                         font-weight: 600;
-                        font-size: 50px;
+                        font-size: 45px;
+                        letter-spacing: -1.5px;
                         color: #${argv.titleColor};
                     }
                 </style>
