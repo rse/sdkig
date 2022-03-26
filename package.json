@@ -39,7 +39,7 @@
         "typopro-web":                   "4.2.6"
     },
     "engines": {
-        "node":                          ">=12.0.0"
+        "node":                          ">=16.0.0"
     },
     "scripts": {
         "prepublishOnly":                "eslint --config eslint.yaml sdkig.js"
