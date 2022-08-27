@@ -23,25 +23,27 @@
         "sdkig":                  "./sdkig.js"
     },
     "devDependencies": {
-        "eslint":                        "8.12.0",
-        "eslint-config-standard":        "17.0.0-1",
-        "eslint-plugin-promise":         "6.0.0",
-        "eslint-plugin-import":          "2.25.4",
+        "eslint":                        "8.23.0",
+        "eslint-config-standard":        "17.0.0",
+        "eslint-plugin-promise":         "6.0.1",
+        "eslint-plugin-import":          "2.26.0",
         "eslint-plugin-node":            "11.1.0"
     },
     "dependencies" : {
-        "yargs":                         "17.4.0",
-        "chalk":                         "4.1.0",
-        "prince":                        "1.9.5",
-        "execa":                         "5.0.0",
+        "yargs":                         "17.5.1",
+        "chalk":                         "4.1.2",
+        "prince":                        "1.9.7",
+        "execa":                         "5.0.1",
         "tmp":                           "0.2.1",
-        "@fortawesome/fontawesome-free": "6.1.1",
+        "@fortawesome/fontawesome-free": "6.1.2",
         "typopro-web":                   "4.2.6"
     },
     "engines": {
         "node":                          ">=16.0.0"
     },
     "scripts": {
-        "prepublishOnly":                "eslint --config eslint.yaml sdkig.js"
+        "prepublishOnly":                "eslint --config eslint.yaml sdkig.js",
+        "test1":                         "node sdkig.js -b bb0000 -i radiation-alt -I ffc0c0 -t ATTENTION -T ffffff -o sample1.png",
+        "test2":                         "node sdkig.js -b 336699 -s graduation-cap -S 6699cc -i face-grin -I c0e0ff -t USERS -T ffffff -o sample2.png"
     }
 }
