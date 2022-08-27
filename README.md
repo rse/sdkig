@@ -66,8 +66,8 @@ Example
 -------
 
 ```sh
-$ sdkig -b bb0000 -i radiation-alt -I ffc0c0 -t "ATTENTION" -T ffffff -o sample1.png
-$ sdkig -b 336699 -s graduation-cap -S 6699cc -i face-grin -I c0e0ff -t "USERS" -T ffffff -o sample2.png
+$ sdkig -b bb0000 -i radiation-alt -I ffc0c0 -t ATTENTION -T ffffff -o sample1.png
+$ sdkig -b 336699 -s graduation-cap -S 6699cc -i face-grin -I c0e0ff -t USERS -T ffffff -o sample2.png
 ```
 
 ![sample1](sample1.png)
