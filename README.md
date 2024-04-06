@@ -76,7 +76,7 @@ $ sdkig -b 336699 -s graduation-cap -S 6699cc -i face-grin -I c0e0ff -t USERS -T
 License
 -------
 
-Copyright &copy; 2020-2022 Dr. Ralf S. Engelschall (http://engelschall.com/)
+Copyright &copy; 2020-2024 Dr. Ralf S. Engelschall (http://engelschall.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
