@@ -1,27 +1,18 @@
 {
-    "name":                       "sdkig",
-    "homepage":                   "http://github.com/rse/sdkig",
-    "description":                "Stream-Deck Key-Image Generator",
-    "version":                    "1.1.3",
-    "license":                    "MIT",
+    "name":                              "sdkig",
+    "homepage":                          "http://github.com/rse/sdkig",
+    "description":                       "Stream-Deck Key-Image Generator",
+    "version":                           "1.1.3",
+    "license":                           "MIT",
     "author": {
-        "name":                   "Dr. Ralf S. Engelschall",
-        "email":                  "rse@engelschall.com",
-        "url":                    "http://engelschall.com"
+        "name":                          "Dr. Ralf S. Engelschall",
+        "email":                         "rse@engelschall.com",
+        "url":                           "http://engelschall.com"
     },
-    "keywords": [
-                                  "stream", "deck", "key", "image", "generator"
-    ],
-    "repository": {
-        "type":                   "git",
-        "url":                    "git://github.com/rse/sdkig.git"
-    },
-    "bugs": {
-        "url":                    "http://github.com/rse/sdkig/issues"
-    },
-    "bin": {
-        "sdkig":                  "./sdkig.js"
-    },
+    "keywords":                          [ "stream", "deck", "key", "image", "generator" ],
+    "repository":                        { "type": "git", "url": "git://github.com/rse/sdkig.git" },
+    "bugs":                              { "url": "http://github.com/rse/sdkig/issues" },
+    "bin":                               { "sdkig": "./sdkig.js" },
     "devDependencies": {
         "eslint":                        "8.57.0",
         "eslint-config-standard":        "17.1.0",
