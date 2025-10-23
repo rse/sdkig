@@ -25,7 +25,7 @@
         "chalk":                         "4.1.2",
         "prince":                        "1.12.2",
         "execa":                         "5.0.1",
-        "tmp":                           "0.2.3",
+        "tmp":                           "0.2.4",
         "@fortawesome/fontawesome-free": "6.7.2",
         "typopro-web":                   "4.2.7"
     },
